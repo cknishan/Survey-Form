@@ -1,0 +1,121 @@
+/*
+font-family: 'Nerko One', cursive;
+font-family: 'Padauk', sans-serif;
+font-family: 'Roboto', sans-serif
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Padauk:wght@700&family=Roboto:ital,wght@1,300&display=swap');
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background:
+      linear-gradient( rgba(32, 28, 28, 0.849),
+      rgba(32, 28, 28, 0.849)),
+      url("https://images.pexels.com/photos/3971985/pexels-photo-3971985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: contain;
+  background-clip: border-box;
+  background-origin: border-box; 
+}
+
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header sytles */
+
+#title{
+  font-family: 'Nerko One', cursive;
+  font-size: 4rem;
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+
+#sub{
+  text-align: center;
+  margin: -5px;
+}
+
+#description{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem ;
+}
+
+/* Form wrapper Styles */
+
+#survey-form{
+  background-color:rgba(14, 8, 4, 0.719);
+  padding: 1rem;
+  margin: auto;
+}
+
+/* Form components styles */
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  padding: .81rem;
+  font-family: 'Padauk', sans-serif;
+  font-size: 1.2rem;
+}
+  label, #dropdown{
+    padding: .5rem;
+  }
+
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+
+  padding: .5rem;
+  border-radius: 10px;
+  outline: none;
+
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#submit{
+  background-color: #215ea0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+#submit:focus,
+#submit:hover{
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  transform: scale(1.05);
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  display: inline-block;
+  margin-right: 0.625rem;
+}

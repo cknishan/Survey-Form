@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Learn Music Online | Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="header">
+      <h1 id="title">Learn Music Online</h1>
+      <h2 id="sub">Survey</h2>
+      <p id="description"> <i>A quick survey to customize website feed according to your preference </i></p>
+    </div>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input 
+          type="text"
+          id="name"
+          required
+          placeholder="Enter your name"
+          autocomplete="off"
+        >
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input 
+          type="email"
+          id="email"
+          required
+          placeholder="youremail@example.com"
+        >
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age(Optional)</label>
+        <input 
+          type="number"
+          id="number"
+          min="10"
+          max="99"
+          placeholder="Age"
+          autocomplete="off"
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown">Select your experience:</label>
+        <select name="" id="dropdown">
+          <option disabled selected value>Select current role.</option>
+          <option value="Newbie">Newbie - Never played / Don't know fundamentals yet.</option>
+          <option value="Casual">Casual - Play now and then / Average Knowledge.</option>
+          <option value="Intermediate">Intermediate - I'm skilled enough to impress large audience.</option>
+          <option value="Expert">Expert - Music is life !</option>
+        </select>
+      </div>  
+
+      <div class="form-group">
+        <p>Where do you spend most time with the music community?</p>
+          <label>
+            <input
+              name="usage"
+              type="radio"
+              value="Instagram">Instagram
+          </label>
+        <label>
+          <input
+          name="usage"
+          type="radio"
+          value="Facebook">Facebook
+      
+        </label> 
+        <label>
+          <input
+            name="usage"
+            type="radio"
+            value="Youtube">Youtube
+        </label>
+        <label>
+          <input
+            name="usage"
+            type="radio"
+            value="Website">Website
+        </label>
+        <label>
+          <input
+            name="usage"
+            type="radio"
+            value="Others">Others
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>What are you interested in? (Check Mark All that Apply) </p>
+        <label>
+          <input
+            name="prefer"
+            type="checkbox"
+            value="Piano">Piano
+      </label>
+      <label>
+          <input
+            name="prefer"
+            type="checkbox"
+            value="Guitar">Guitar
+      </label>
+      <label>
+        <input
+          name="prefer"
+          type="checkbox"
+          value="Ukulele">Ukulele
+      </label>
+      <label>
+        <input
+          name="prefer"
+          type="checkbox"
+          value="violin">Violin
+      </label>
+      <label>
+        <input
+          name="prefer"
+          type="checkbox"
+          value="Drums">Drums
+      </label>
+      <label>
+        <input
+          name="prefer"
+          type="checkbox"
+          value="Vocals">Vocals
+      </label>
+      <label>
+        <input
+          name="prefer"
+          type="checkbox"
+          value="Beatbox">Beatbox
+      </label>
+      <label>
+        <input
+          name="prefer"
+          type="checkbox"
+          value="Digital">Digital Music
+      </label>
+      <label>
+        <input
+          name="prefer"
+          type="checkbox"
+          value="Flute">Flute
+      </label>
+      <label>
+        <input
+          name="prefer"
+          type="checkbox"
+          value="Others">Where's the details and the rest of the instruments?
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label> Any more feedbacks or suggestions ?</label>
+      <textarea
+        name="comments"
+        rows="12"
+        cols="20"
+        placeholder="Enter your comments or suggestions here..."
+      ></textarea>
+    </div>
+
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+
+      
+
+    </form>
+
+
+
+  </div>
+
+<!-- 
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
